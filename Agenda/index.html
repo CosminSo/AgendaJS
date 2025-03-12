@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda Contacte</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Agenda Contacte</h1>
+    <div class="form-container">
+      <label for="name">Nume:</label>
+      <input type="text" id="name" />
+      <label for="phone">Telefon:</label>
+      <input type="text" id="phone" />
+      <button id="addBtn" onclick="addOrUpdateContact()">Adauga Contact</button>
+    </div>
+    <div class="table-container">
+      <table id="contactsTable">
+        <thead>
+          <tr>
+            <th>Nume</th>
+            <th>Telefon</th>
+            <th>Modifica</th>
+            <th>Sterge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Contactele for fi adaugate dinamic-->
+        </tbody>
+      </table>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
